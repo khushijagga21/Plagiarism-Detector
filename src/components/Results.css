@@ -1,0 +1,87 @@
+.results-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f8ff;
+  min-height: 100vh;
+}
+
+.results-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.similarity-box {
+  background: #ffffff;
+  border: 2px solid #007bff;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 220px;
+  margin: 0 auto 2rem;
+}
+
+.score {
+  font-size: 2rem;
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+.text-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.text-box {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.text-box h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.text-box.highlight {
+  border-left: 4px solid #ff4d4f;
+}
+
+.btn-group {
+  margin-top: 2rem;
+}
+
+.btn {
+  margin: 0 1rem;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.retry {
+  background-color: #007bff;
+  color: white;
+}
+
+.retry:hover {
+  background-color: #0056b3;
+}
+
+.download {
+  background-color: #28a745;
+  color: white;
+}
+
+.download:hover {
+  background-color: #1e7e34;
+}

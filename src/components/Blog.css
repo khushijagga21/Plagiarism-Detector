@@ -1,0 +1,79 @@
+.blog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.blog-left {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.blog-left h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.blog-left p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.blog-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.blog-btn:hover {
+  background-color: #0056b3;
+}
+
+.blog-right {
+  display: flex;
+  flex: 2 1 600px;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 270px;
+  transition: transform 0.2s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #222;
+}
+
+.blog-card p {
+  color: #555;
+  font-size: 0.95rem;
+}

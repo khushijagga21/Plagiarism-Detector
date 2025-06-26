@@ -1,36 +1,36 @@
 // src/components/Navbar.js
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
+import Login from "./Login"
+
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="nav-left">
-        <div className="logo-circle">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/3039/3039396.png"
-            alt="logo"
-          />
-        </div>
-        <h2 className="brand-name">Plagia<span>Scan</span></h2>
+      <div className="logo">
+        <Link to="/" className="logo-link">Plagia<span style={{ color: "#f9a825" }}>Scan</span></Link>
       </div>
 
       <ul className="nav-links">
-        <li><a href="#">Checker</a></li>
-        <li><a href="#">Paraphraser</a></li>
-        <li><a href="#">AI Detector</a></li>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
+           <li><Link to="/">Home</Link></li>
+        <li><Link to="/proFeature">Checker</Link></li>
+        <li><Link to="/GrammerCheck">Grammer Check</Link></li>
+        <li><Link to="/TextCheckerBox">AI Detector</Link></li>
+        <li><Link to="/Tools">Tools</Link></li>
+        <li><Link to="/Login">Login</Link></li>
 
-      <div className="nav-right">
-        <select className="language">
-          <option>🌐 EN</option>
-        </select>
-        <button className="go-pro">
-          <span>⚡</span> Go Pro
-        </button>
-      </div>
+        <li>
+          <select className="language-select">
+            <option>EN</option>
+            <option>HI</option>
+          </select>
+        </li>
+
+        <li>
+          <Link to="/pricing" className="go-pro-btn">⚡ Go Pro</Link>
+        </li>
+      </ul>
     </nav>
   );
 };

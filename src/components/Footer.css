@@ -1,0 +1,103 @@
+/* src/components/Footer.css */
+
+.footer {
+  background-color: #f7f9fc;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 3rem 2rem 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-subscribe {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.footer-about a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.link-columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.link-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.link-columns li {
+  margin-bottom: 0.6rem;
+}
+
+.link-columns a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.link-columns a:hover {
+  color: #007bff;
+}
+
+.footer-subscribe .subscribe-box {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.subscribe-box input {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+.subscribe-box button {
+  padding: 0.6rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-box button:hover {
+  background-color: #0056b3;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+}
